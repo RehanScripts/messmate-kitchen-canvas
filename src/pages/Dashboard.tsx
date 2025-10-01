@@ -1,4 +1,4 @@
-import { Calendar, DollarSign, Utensils } from "lucide-react";
+import { Calendar, IndianRupee, Utensils } from "lucide-react";
 import { StatCard } from "@/components/StatCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -31,7 +31,7 @@ const Dashboard = () => {
           value="₹3,240"
           change="+8% from last month"
           changeType="positive"
-          icon={DollarSign}
+          icon={IndianRupee}
         />
         <StatCard
           title="Upcoming Meals"

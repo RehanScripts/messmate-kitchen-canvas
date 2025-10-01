@@ -19,6 +19,7 @@ import {
   SidebarMenuItem,
   SidebarHeader,
 } from "@/components/ui/sidebar";
+import logo from "@/assets/messmate-logo.png";
 
 const menuItems = [
   { title: "Dashboard", url: "/", icon: LayoutDashboard },
@@ -34,10 +35,8 @@ export function AppSidebar() {
   return (
     <Sidebar className="border-r border-border">
       <SidebarHeader className="p-6 border-b border-border">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-lg">M</span>
-          </div>
+        <div className="flex items-center gap-3">
+          <img src={logo} alt="MessMate Logo" className="w-10 h-10" />
           <span className="font-heading font-bold text-xl text-foreground">MessMate</span>
         </div>
       </SidebarHeader>
@@ -59,7 +58,7 @@ export function AppSidebar() {
                         `flex items-center gap-3 px-3 py-2 rounded-lg transition-all ${
                           isActive
                             ? "bg-primary text-primary-foreground font-medium"
-                            : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                            : "text-foreground hover:bg-muted"
                         }`
                       }
                     >
